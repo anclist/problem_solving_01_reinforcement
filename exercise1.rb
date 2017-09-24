@@ -16,3 +16,7 @@ p train111
 train80B = trains[5][:frequency_in_minutes]
 
 p train80B
+
+train610 = trains[2][:direction]
+
+p train610
