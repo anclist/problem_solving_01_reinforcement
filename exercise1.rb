@@ -8,3 +8,7 @@ trains = [
 {train: "110", frequency_in_minutes: 15, direction: "north"},
 {train: "111", frequency_in_minutes: 15, direction: "south"}
 ]
+
+train111 = trains[7][:direction]
+
+p train111
