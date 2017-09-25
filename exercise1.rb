@@ -68,3 +68,7 @@ end
 
 trains_going("north", trains)
 trains_going("south", trains)
+
+trains[0][:first_departure_time] = 6
+
+p trains[0]
