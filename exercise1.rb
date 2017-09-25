@@ -20,3 +20,34 @@ p train80B
 train610 = trains[2][:direction]
 
 p train610
+
+trains_north = []
+
+# trains.each do |each_train|
+#   each_train.each do |k, v|
+#     if v == "north"
+#       trains_north << each_train[:train]
+#     end
+#   end
+# end
+
+
+trains.each do |each_train|
+  if each_train[:direction] == "north"
+      trains_north << each_train[:train]
+  end
+end
+
+p trains_north
+
+# trains_east = []
+#
+# trains.each do |each_train|
+#   each_train.each do |k, v|
+#     if v == "east"
+#       trains_east << each_train[:train]
+#     end
+#   end
+# end
+
+p trains_east
