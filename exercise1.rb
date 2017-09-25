@@ -37,11 +37,8 @@ trains.each do |each_train|
       trains_north << each_train[:train]
   end
 end
-
 p trains_north
 
-# trains_east = []
-#
 # trains.each do |each_train|
 #   each_train.each do |k, v|
 #     if v == "east"
@@ -50,4 +47,24 @@ p trains_north
 #   end
 # end
 
+trains_east = []
+trains.each do |each_train|
+  if each_train[:direction] == "east"
+      trains_east << each_train[:train]
+  end
+end
 p trains_east
+
+
+def trains_going(direction, trains)
+  trains_by_direction = []
+  trains.each do |each_train|
+    if each_train[:direction] == direction
+        trains_by_direction << each_train[:train]
+    end
+  end
+  p trains_by_direction
+end
+
+trains_going("north", trains)
+trains_going("south", trains)
